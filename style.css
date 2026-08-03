@@ -1,0 +1,142 @@
+:root {
+    --color-principal: #22443a;
+    --color-secundario: #547c62;
+    --fondo: #faf8f3;
+    --fondo-alterno: #eff3f1;
+    --texto-principal: #2d2d2d;
+    --texto-secundario: #6e6e6e;
+    --acento: #c8a86b;
+    --acento-secundario: #609c8a;
+
+}
+
+body {
+    font-family: conmemorant garamond ,playfair ;
+    margin: 0;
+    padding: 0;
+    background-color: var(--fondo);
+    color: var(--texto-principal);
+}
+
+header {
+    background-color: var(--color-principal);
+    color: var(--fondo);
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+
+}
+
+nav a {
+    color: var(--fondo);
+    text-decoration: none;
+    font-weight: bold;
+    
+
+}
+
+nav a:hover {
+    color: var(--color-secundario);
+    background-color: var(--fondo-alterno);
+    padding: 8px 13px;
+    border-radius: 5px;
+    transition: all .6s;
+    transform: scale(2.5);
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section:nth-of-type(even) {
+    background-color: var(--fondo-alterno);
+}
+
+h2 {
+    color: var(--color-principal);
+    border-bottom: 2px solid var(--acento);
+    padding-bottom: 8px;
+}
+article {
+    background-color: var(--fondo-alterno);
+    border: 1px solid var(--color-secundario);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+article h3 {
+    color: var(--color-principal);
+}
+
+#sobre_mi img {
+    max-width: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-left: 40px;
+}
+
+#sobre_mi {
+    display: flex;
+}
+
+
+#habilidades li {
+    background-color: var(--fondo-alterno);
+    border: 1px solid var(--acento-secundario);
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    border-radius: 40px;
+    flex-direction: column;
+    align-items: center;
+    color: var(--texto-secundario);
+}
+
+#habilidades ul {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+#habilidades li i {
+    font-size: 30px;
+    display: block;
+    color: var(--acento-secundario);
+    padding-bottom: 5px;
+}
+
+#habilidades h3 {
+    color: var(--color-principal);
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#redes_contactos li {
+    display: block;
+    margin: 5px;
+}
+#redes_contactos a {
+    color: var(--color-secundario);
+    text-decoration: none;
+    font-size: 16px;
+}
+#redes_contactos a:hover {
+    color: var(--acento);
+}
+
+footer {
+    background-color: var(--color-principal);
+    color: var(--fondo);
+    text-align: center;
+    padding: 20px;
+}
